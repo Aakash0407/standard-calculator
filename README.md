@@ -7,30 +7,99 @@ To design a web application for a standard calculator.
 ## DESIGN STEPS:
 
 ### Step 1:
-
+First we want fork and clone the repository,then we want to create a project and app using django framework.
 
 ### Step 2:
-
+In app we want to create the templates folder follows with app folder in that app folder we want to create a required html files.
 
 ### Step 3:
-
+Change the settings.py,views.py,urls.py
 
 ### Step 4:
-
+Then we want to write a revalent code in that html file
 
 ### Step 5:
-
+Then we want to run the server.
 ### Step 6:
-
 Validate the HTML and CSS code.
 
 ### Step 6:
-
 Publish the website in the given URL.
 
 ## PROGRAM :
+````
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple</title>
+        <style type="text/css">
+        table{
+            border: 1px solid rgb(0, 0, 0);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type="text"]{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
 
+
+        input[type="button"]{
+            width: 100%;
+            padding: 20px 40px;
+            background-color:rgb(85, 47, 255);
+            border-radius: 2px;
+        }
+        </style>
+    </head>
+    <body>
+        <form name="form1" onload="result.value=''">
+            <h1 style="text-align: center;color:blue;">Simple Calculator</h1>
+        <table id="calc">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="result.value+='1'"/></td>
+                <td><input type="button" value="2" onclick="result.value+='2'"/></td>
+                <td><input type="button" value="3" onclick="result.value+='3'"/></td>
+                <td><input type="button" value="+" onclick="result.value+='+'"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="result.value+='4'"/></td>
+                <td><input type="button" value="5" onclick="result.value+='5'"/></td>
+                <td><input type="button" value="6" onclick="result.value+='6'"/></td>
+                <td><input type="button" value="-" onclick="result.value+='-'"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="result.value+='7'"/></td>
+                <td><input type="button" value="8" onclick="result.value+='8'"/></td>
+                <td><input type="button" value="9" onclick="result.value+='9'"/></td>
+                <td><input type="button" value="*" onclick="result.value+='*'"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="/" onclick="result.value+='/'"/></td>
+                <td><input type="button" value="0" onclick="result.value+='0'"/></td>
+                <td><input type="button" value="." onclick="result.value+='.'"/></td>
+                <td><input type="button" value="=" onclick="result.value=eval(result.value)"/></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="clearall" id="clear" onclick="result.value=''">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
+````
 ## OUTPUT:
+![exp-8](https://github.com/Aakash0407/standard-calculator/assets/118799103/8928777f-2f38-4569-ba51-184eaafe1eb2)
 
 ## Result:
-
+The output for calculator is displayed successfully.
